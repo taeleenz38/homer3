@@ -9,6 +9,9 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+  
+
+
 const Dashboard = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
@@ -73,7 +76,17 @@ const Dashboard = () => {
       request.requestType === "Withdraw on-chain"
   );
 
-  const renderRequestItems = (requestItems) => (
+  interface RequestItem {
+    requestType: string;
+    name: string;
+    currency: string;
+    amount: number;
+    requestDate: string;
+    status: string;
+    icon: React.ReactNode;
+  }
+
+  const renderRequestItems = (requestItems: RequestItem[]) => (
     <div>
       <div className="flex text-[#8A849C] font-bold p-6">
         <div className="w-3/12">REQUEST TYPE</div>
@@ -111,6 +124,7 @@ const Dashboard = () => {
       ))}
     </div>
   );
+  
 
   return (
     <div className="pl-[450px] pr-[100px] mt-10">
