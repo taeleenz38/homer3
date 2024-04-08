@@ -49,7 +49,7 @@ const TabSelector = () => {
     },
   ];
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id: string) => {
     startTransition(() => {
       setTab(id);
     });
