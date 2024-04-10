@@ -8,9 +8,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
-  
-
+import Link from "next/link";
 
 const Dashboard = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -19,7 +17,7 @@ const Dashboard = () => {
   const requests = [
     {
       requestType: "Acquire with fiat",
-      name: "ANZ | 313336 - 455729832",
+      name: "AIB | 313336 - 455729832",
       currency: "AUDC",
       amount: 500,
       requestDate: "05 April 2024",
@@ -28,7 +26,7 @@ const Dashboard = () => {
     },
     {
       requestType: "Acquire with fiat",
-      name: "NAB | 523669 - 212378781",
+      name: "NSB | 523669 - 212378781",
       currency: "USDC",
       amount: 1000,
       requestDate: "04 April 2024",
@@ -55,7 +53,7 @@ const Dashboard = () => {
     },
     {
       requestType: "Redeem to bank",
-      name: "ANZ | 336923 - 313268744",
+      name: "AIB | 336923 - 313268744",
       currency: "AUDC",
       amount: 750,
       requestDate: "02 April 2024",
@@ -96,7 +94,8 @@ const Dashboard = () => {
         <div className="w-2/12">STATUS</div>
       </div>
       {requestItems.map((request, index) => (
-        <div
+        <Link
+          href="/dashboard/request"
           key={index}
           className={`flex items-center ${
             request.status === "Completed"
@@ -120,11 +119,10 @@ const Dashboard = () => {
             <p className="mr-8">{request.status}</p>
           </div>
           <ArrowForwardIosIcon />
-        </div>
+        </Link>
       ))}
     </div>
   );
-  
 
   return (
     <div className="pl-[450px] pr-[100px] mt-10">
