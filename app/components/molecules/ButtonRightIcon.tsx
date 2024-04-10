@@ -9,7 +9,7 @@ interface ButtonRightIconProps {
 const ButtonRightIcon: React.FC<ButtonRightIconProps> = ({ text, endIcon }) => {
   return (
     <Button
-      className="bg-[#212654] capitalize text-xl font-medium h-14 hover:bg-[white] hover:text-[#212654]"
+      className="bg-primary capitalize text-xl font-medium h-14 hover:bg-[white] hover:text-primary"
       variant="contained"
       endIcon={endIcon}
       fullWidth

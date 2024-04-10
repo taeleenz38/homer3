@@ -101,7 +101,7 @@ const Dashboard = () => {
           className={`flex items-center ${
             request.status === "Completed"
               ? "bg-gray-100 text-gray-500"
-              : "bg-white text-[#212654]"
+              : "bg-white text-primary"
           } mb-5 p-6 font-medium rounded-2xl shadow-md hover:cursor-pointer`}
         >
           <div className="w-3/12">

@@ -13,7 +13,7 @@ const Profile = () => {
         <Heading2 text="Profile" />
         <div className="w-44">
           <Button
-            className="bg-white text-[#212654] text-xl capitalize font-medium h-14 hover:bg-[#212654] hover:text-white"
+            className="bg-white text-primary text-xl capitalize font-medium h-14 hover:bg-primary hover:text-white"
             variant="contained"
             fullWidth
           >
@@ -30,13 +30,13 @@ const Profile = () => {
             width={350}
             height={350}
           />
-          <h3 className="text-xl mt-4 font-medium text-[#212654]">
+          <h3 className="text-xl mt-4 font-medium text-primary">
             Ted Hansen
           </h3>
         </div>
         <div className="flex flex-col w-3/12 border-r-2 px-6 justify-around">
           <div className="flex flex-col bg-white rounded-xl p-4 shadow-md">
-            <h3 className="text-2xl mb-4 font-medium text-[#212654]">
+            <h3 className="text-2xl mb-4 font-medium text-primary">
               Basic Information
             </h3>
             <p className="mb-3">
@@ -58,7 +58,7 @@ const Profile = () => {
         </div>
         <div className="flex flex-col w-5/12 px-6 justify-around">
           <div className="flex flex-col bg-white rounded-xl p-4 shadow-md">
-            <h3 className="text-2xl mb-4 font-medium text-[#212654]">
+            <h3 className="text-2xl mb-4 font-medium text-primary">
               Wallets
             </h3>
             <p className="mb-3">
@@ -73,7 +73,7 @@ const Profile = () => {
             </p>
           </div>
           <div className="flex flex-col bg-white rounded-xl mt-4 p-4 shadow-md">
-            <h3 className="text-2xl mb-4 font-medium text-[#212654]">Banks</h3>
+            <h3 className="text-2xl mb-4 font-medium text-primary">Banks</h3>
             <div className="mb-4">
               <AccountBalanceIcon />{" "}
               <span className="ml-2 text-[#697077]">

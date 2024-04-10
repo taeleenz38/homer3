@@ -33,7 +33,7 @@ const BankAccountsTable = () => {
       </div>
       {tableData.map((item, index) => (
         <div
-          className="flex items-center bg-white mb-4 p-6 font-medium text-[#212654] rounded-2xl shadow-md"
+          className="flex items-center bg-white mb-4 p-6 font-medium text-primary rounded-2xl shadow-md"
           key={index}
         >
           <div className="w-4/12">

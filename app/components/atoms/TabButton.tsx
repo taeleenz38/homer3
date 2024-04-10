@@ -17,17 +17,17 @@ const TabButton: React.FC<TabButtonProps> = ({
   selectTab,
   children,
 }) => {
-  const buttonClasses = active ? "text-[#212654]" : "text-black";
+  const buttonClasses = active ? "text-primary" : "text-black";
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-9 font-medium hover:text-[#212654] ${buttonClasses}`}>
+      <p className={`mr-9 font-medium hover:text-primary ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-[#212654] mt-1 mr-9"
+        className="h-1 bg-primary mt-1 mr-9"
       ></motion.div>
     </button>
   );

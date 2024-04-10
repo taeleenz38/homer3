@@ -52,7 +52,7 @@ const SignUpForm = () => {
         <ButtonNoIcon text="Create Account" />
       </Link>
       <Divider className="my-14"></Divider>
-      <Link className="text-[#212654]" href="/">
+      <Link className="text-primary" href="/">
         Already have an account? Sign In here
       </Link>
     </div>

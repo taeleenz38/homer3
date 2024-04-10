@@ -25,7 +25,7 @@ const SignInForm = () => {
       />
       <div className="flex justify-between items-center my-4">
         <CheckboxWithLabel labelText="Remember me" />
-        <Link href="#" className="text-[#212654]">
+        <Link href="#" className="text-primary">
           Forgot Password?
         </Link>
       </div>
@@ -33,7 +33,7 @@ const SignInForm = () => {
         <ButtonNoIcon text="Sign In" />
       </Link>
       <Divider className="my-20"></Divider>
-      <Link className="text-[#212654]" href="/signup">
+      <Link className="text-primary" href="/signup">
         Do not have an account? Sign Up here
       </Link>
     </div>

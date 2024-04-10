@@ -9,7 +9,7 @@ interface ButtonNoIconProps {
 const ButtonNoIcon: React.FC<ButtonNoIconProps> = ({ text }) => {
   return (
     <Button
-      className="bg-[#212654] text-xl capitalize font-medium h-14 hover:bg-[white] hover:text-[#212654]"
+      className="bg-primary text-xl capitalize font-medium h-14 hover:bg-[white] hover:text-primary"
       variant="contained"
       fullWidth
     >

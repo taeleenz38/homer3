@@ -22,7 +22,7 @@ const Step2 = () => {
         by any US or foreign government agency, insurance fund, person or
         entity.
       </p>
-      <button className="text-[#212654] w-full text-right mt-6">
+      <button className="text-primary w-full text-right mt-6">
         Add New Bank Account
       </button>
     </div>

@@ -45,7 +45,7 @@ const AcquireForm: React.FC<AddBankFormProps> = ({ toggleForm }) => {
   return (
     <div className="bg-white p-6 w-[1000px] fixed top-[20%] left-[50%] rounded-3xl z-30 ml-[-500px]">
       <div className="mb-10">{getStepContent(activeStep)}</div>
-      <div className="w-5/6 mx-auto text-[#212654]">
+      <div className="w-5/6 mx-auto text-primary">
         <MobileStepper
           steps={totalSteps}
           position="static"

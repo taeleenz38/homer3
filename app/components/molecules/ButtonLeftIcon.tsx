@@ -9,7 +9,7 @@ interface ButtonLeftIconProps {
 const ButtonLeftIcon: React.FC<ButtonLeftIconProps> = ({ text, startIcon }) => {
   return (
     <Button
-      className="bg-[#212654] text-xl font-medium capitalize h-14 hover:bg-[white] hover:text-[#212654]"
+      className="bg-primary text-xl font-medium capitalize h-14 hover:bg-[white] hover:text-primary"
       variant="contained"
       startIcon={startIcon}
       fullWidth
