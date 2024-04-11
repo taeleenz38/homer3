@@ -16,8 +16,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Project Homer",
-  description: "Ubiquity - Project Homer",
+  title: "ALOGO - ADMIN",
+  description: "ALOGO - ADMIN",
 };
 
 export default function RootLayout({
