@@ -21,11 +21,17 @@ const request = () => {
           <div className="col-span-1 font-medium">Bank Account Details</div>
           <div className="col-span-2">393422-676964455</div>
         </div>
-        <div className="grid grid-cols-3 pl-4 w-7/12 mb-4">
+        <div className="grid grid-cols-3 pl-4 w-7/12 pb-14 mb-4 border-b-[1px]">
           <div className="col-span-1 font-medium">Wallet Address</div>
           <div className="col-span-2">
             0x866BA0c6B77f1137F5650d73C0c4aD557F2fbC14
           </div>
+        </div>
+        <div className="grid grid-cols-3 pl-4 w-7/12 mb-4">
+          <div className="col-span-1 font-medium">
+            Transaction Reference Number
+          </div>
+          <div className="col-span-2">T512940SX0</div>
         </div>
       </div>
     </div>
