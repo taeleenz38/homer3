@@ -17,7 +17,7 @@ const Navbar = () => {
         />
         <div className="flex mb-8">
           <Image src="/images/user.png" alt="Home" width={50} height={50} />{" "}
-          <Username text="John Doe" />
+          <Username text="Tae Lee" />
         </div>
         <div className="nav-items border-[1px] border-[#F2F4F8]">
           <Link
